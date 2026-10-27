@@ -31,3 +31,6 @@ logs/
 
 # Raw untracked data archive (prevent pushing multi-megabyte zip or temp files if desired)
 raw_data/
+*.xlsx
+*.zip
+sanitize_fabric_data.py

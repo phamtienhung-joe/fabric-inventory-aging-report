@@ -413,7 +413,10 @@ export default function App() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 self-start md:self-auto">
+          <div className="flex items-center gap-3 self-start md:self-auto">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-50 text-amber-800 border border-amber-200">
+              Portfolio Demo · Sanitized Figures
+            </span>
             <div className="text-right pl-3">
               <div className="text-[11px] text-slate-500 font-medium">As of Date</div>
               <div className="text-xs font-semibold text-slate-800">{data.metadata.generated_at.slice(0, 10)}</div>

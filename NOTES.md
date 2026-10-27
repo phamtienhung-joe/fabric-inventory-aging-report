@@ -20,12 +20,8 @@ Monthly fabric stock and liability
 
 - Calculate Value (PHYSICALINVENTORY x Stanrdcost), name "Total Cost". Show Batch as well.
 
-- Add "Import Duty"; "VAT"; "Total After Tax" (based on Standard Cost). Detail please see report ""
+- Add "Import Duty"; "VAT"; "Total After Tax" (based on Standard Cost). Detail please see report "RSG UPH Arhaus Aged Detail Cover_FORM"
 
-- Calculate AWS - average week of stock, import TAX, "Total Cost" x 12%. Detail please see report ""
+- Calculate AWS - average week of stock, import TAX, "Total Cost" x 12%. Detail please see report "RSG UPH Arhaus Aged Detail Cover_FORM"
 
 - Standard cost - taken from table On-hand in the link "https://rsc-prod.operations.dynamics.com/?cmp=rff&mi=InventOnhandItem"; Map to data.
-
-- Use Outstd to get FG demand, then use BOM to calculate allocate RM Demand across months, then do stock projection for RM (project 4 months ahead from the current month). Show Starting stock, Incoming stock, Demand and Ending stock. Detail please see report "".
-
-
