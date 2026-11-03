@@ -2,9 +2,9 @@
 ETL Pipeline for Monthly Fabric Stock & Liability Report
 Processes:
 1. Details.xlsx (Power BI Export)
-2. raw_data/InventoryOnHand_RSC_20261023.xlsx (D365 Standard Costs)
+2. raw_data/InventoryOnHand_20261023.xlsx (D365 Standard Costs)
 3. raw_data/RM to Customer.xlsx (Customer Mapping)
-4. raw_data/RSG UPH Arhaus Aged Detail Cover_FORM.xlsx (Demand & Reference)
+4. raw_data/RSG UPH Aged Detail Cover_FORM.xlsx (Demand & Reference)
 
 Outputs:
 - src/data/inventory_data.json (for React dashboard)
@@ -54,7 +54,7 @@ def main():
     print("Step 1: Loading Standard Costs...")
     cost_map = {}
     cost_by_item = {}
-    onhand_file = "raw_data/InventoryOnHand_RSC_20261023.xlsx"
+    onhand_file = "raw_data/InventoryOnHand_20261023.xlsx"
     if os.path.exists(onhand_file):
         wb_c = openpyxl.load_workbook(onhand_file, data_only=True)
         ws_c = wb_c["Inventory OnHand"]
@@ -77,7 +77,7 @@ def main():
                     pass
 
     # Reference costs fallback
-    ref_file = "raw_data/RSG UPH Arhaus Aged Detail Cover_FORM.xlsx"
+    ref_file = "raw_data/RSG UPH Aged Detail Cover_FORM.xlsx"
     if os.path.exists(ref_file):
         wb_r = openpyxl.load_workbook(ref_file, data_only=True)
         ws_ar = wb_r["AR COVERS"]

@@ -366,7 +366,7 @@ export default function App() {
         <div className="w-12 h-12 border-4 border-slate-200 border-t-slate-800 rounded-full animate-spin mb-4" />
         <h2 className="text-base font-bold text-slate-800">Loading Fabric Inventory &amp; Aging Report</h2>
         <p className="text-xs text-slate-500 mt-1 max-w-sm">
-          Processing 1,859 material batches, Dynamics 365 standard costs, and tax liabilities...
+          Processing material batches, Dynamics 365 standard costs, and tax liabilities...
         </p>
       </div>
     );
